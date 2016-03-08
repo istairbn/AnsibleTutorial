@@ -4,12 +4,7 @@
   vars:
     document_root: /vagrant
 
-  handlers: 
-  - name: reload apache
-    service: name=apache2 state=reloaded
-
   pre_tasks:
-
   - name: update apt cache
     apt: update_cache=yes
 
